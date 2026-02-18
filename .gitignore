@@ -1,0 +1,22 @@
+# Dependències PHP
+www/vendor/
+
+# Entorn i secrets
+.env
+.env.local
+.env.*.local
+
+# IDE i sistema
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Uploads (mantenir .gitkeep)
+www/uploads/*
+!www/uploads/.gitkeep
+
+# Logs
+*.log

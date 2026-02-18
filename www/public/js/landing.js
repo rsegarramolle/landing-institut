@@ -1,0 +1,14 @@
+(function () {
+  // Suavitzar scroll en enllaços interns
+  document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+    var href = a.getAttribute('href');
+    if (href === '#') return;
+    a.addEventListener('click', function (e) {
+      var target = document.querySelector(href);
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+})();
