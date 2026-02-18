@@ -1,4 +1,4 @@
-# Landing gestionable – Institut
+# Landing gestionable – Institut (Ús educatiu)
 
 Landing page per a un centre educatiu, desenvolupada amb **PHP 8 (POO)**, **MySQL** i **Nginx**, amb Docker Compose per desplegar l’entorn.
 
