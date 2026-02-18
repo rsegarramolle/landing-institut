@@ -13,6 +13,23 @@ Landing page per a un centre educatiu, desenvolupada amb **PHP 8 (POO)**, **MySQ
 - Docker i Docker Compose
 - (Opcional) Composer per generar l’autoload localment
 
+## Pujar el projecte a GitHub
+
+El repositori Git ja està inicialitzat i el primer commit està fet. Per pujar-lo a GitHub:
+
+1. Crea un **repositori nou** a [github.com/new](https://github.com/new) (nom recomanat: `landing-institut`). No afegueu README ni .gitignore; el projecte ja en té.
+
+2. Enllaça el repositori remot i puja les canvis (substitueix `EL_TEU_USUARI` pel teu usuari de GitHub):
+
+   ```bash
+   cd landing-institut
+   git remote add origin https://github.com/rsegarramolle/landing-institut.git
+   git branch -M main
+   git push -u origin main
+   ```
+
+   Repositori: [github.com/rsegarramolle/landing-institut](https://github.com/rsegarramolle/landing-institut)
+
 ## Posada en marxa
 
 1. **Clonar o copiar el projecte** i anar a la carpeta:
