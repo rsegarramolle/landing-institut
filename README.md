@@ -12,6 +12,7 @@ Landing page per a un centre educatiu, desenvolupada amb **PHP 8 (POO)**, **MySQ
 
 - Docker i Docker Compose
 - (Opcional) Composer per generar l’autoload localment
+- (Opcional) És pot instal·lar nativament en un servidor web amb PHP. Tenir en compte que utilitza un microframework amb gestió de rutes unificades al fitxer index.php del directori públic.
 
 ## Pujar el projecte a GitHub
 
