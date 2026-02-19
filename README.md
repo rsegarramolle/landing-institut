@@ -32,31 +32,20 @@ El repositori Git ja està inicialitzat i el primer commit està fet. Per pujar-
 
 ## Posada en marxa
 
-1. **Clonar o copiar el projecte** i anar a la carpeta:
+1. **Clonar el projecte** i anar a la carpeta:
 
    ```bash
+   git clone https://github.com/rsegarramolle/landing-institut.git
    cd landing-institut
    ```
 
-2. **Instal·lar dependències PHP (autoload)** dins del contenidor:
-
-   ```bash
-   docker compose run --rm php composer install --no-dev
-   ```
-
-   Si teniu Composer al vostre ordinador:
-
-   ```bash
-   cd www && composer install --no-dev && cd ..
-   ```
-
-3. **Pujar els serveis**:
+2. **Pujar els serveis** (el repositori inclou `vendor/`, no cal executar `composer install`):
 
    ```bash
    docker compose up -d
    ```
 
-4. **Obrir al navegador**:
+3. **Obrir al navegador**:
    - Landing: [http://localhost:8080](http://localhost:8080)
    - Admin: [http://localhost:8080/admin](http://localhost:8080/admin)
 
@@ -101,7 +90,7 @@ landing-institut/
 │   │   └── admin/
 │   ├── uploads/
 │   ├── composer.json
-│   └── vendor/            # Després de composer install
+│   └── vendor/            # Inclòs al repo; opcional: composer install per actualitzar
 └── README.md
 ```
 
